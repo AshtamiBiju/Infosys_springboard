@@ -44,4 +44,4 @@ Both features leverage cutting-edge NLP models from the Hugging Face ecosystem, 
 - 🔹 **Changed URLs** to pull two new public text files for variety  
 - 🔹 **Added clear print statements** showing load success and character count  
 - 🔹 **Added inline comments** for readability and better documentation  
-- 🔹 **Error handling** to gracefully handle errors
+- 🔹 **Error handling** to gracefully handle errors(Handled Warnings)
