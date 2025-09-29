@@ -31,7 +31,7 @@ Both features leverage cutting-edge NLP models from the Hugging Face ecosystem, 
 - **End-to-End Development** – From setup and coding to testing and documentation
 
 ---
-## 🔄 What’s Implemented So Far(Notebook1)
+## 🔄 What’s Implemented So Far(Notebook_1_clean)
 - ✅ Loading text from external URLs  
 - ✅ Cleaning and preprocessing text  
 - ✅ Visualizing text properties (word frequency bar charts, length histograms)  
@@ -40,7 +40,7 @@ Both features leverage cutting-edge NLP models from the Hugging Face ecosystem, 
 
 ---
 
-## 📝 Changes Added in Milestone 1(Notebook1)
+## 📝 Changes Added in Milestone 1(Notebook_1_clean)
 - 🔹 **Changed URLs** to pull two new public text files for variety  
 - 🔹 **Added clear print statements** showing load success and character count  
 - 🔹 **Added inline comments** for readability and better documentation  
