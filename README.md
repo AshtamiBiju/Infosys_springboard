@@ -10,7 +10,7 @@
 - **Paraphrase**: Rewrites sentences to improve clarity, flow, or style.  
 - **Compare**: Checks similarity between original and processed text to make sure nothing important is lost.  
 
-We use pre-trained models like T5,PEGASUS,BART from Hugging Face, so it’s high-quality AI without needing to train anything from scratch.  
+Used pre-trained models like T5,PEGASUS,BART from Hugging Face  
 
 ---
 
