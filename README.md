@@ -20,7 +20,6 @@ Both features leverage cutting-edge NLP models from the Hugging Face ecosystem, 
   - NLTK / SpaCy (optional text preprocessing)  
   - Scikit-learn (basic data analysis & metrics)  
   - Matplotlib / Seaborn (visualizations)
-  - 
 ---
 
 ## 🎯 Project Goals  
@@ -29,8 +28,20 @@ Both features leverage cutting-edge NLP models from the Hugging Face ecosystem, 
 - **Python for AI** – Working with Transformers, NLTK, Scikit-learn  
 - **Model Fine-Tuning** – Specializing pre-trained models for summarization/paraphrasing tasks  
 - **NLP Fundamentals** – Applying extractive & abstractive summarization, tokenization, and evaluation metrics  
-- **End-to-End Development** – From setup and coding to testing and documentation  
+- **End-to-End Development** – From setup and coding to testing and documentation
+
+---
+## 🔄 What’s Implemented So Far  
+- ✅ Loading text from external URLs  
+- ✅ Cleaning and preprocessing text  
+- ✅ Visualizing text properties (word frequency bar charts, length histograms)  
+- ✅ Summarizer using Hugging Face model (T5 or similar)  
+- ✅ Paraphraser using Hugging Face model
 
 ---
 
-## 📂 Repository Structure  
+## 📝 Changes Added in Milestone 1
+- 🔹 **Changed URLs** to pull two new public text files for variety  
+- 🔹 **Added clear print statements** showing load success and character count  
+- 🔹 **Added inline comments** for readability and better documentation  
+- 🔹 **Error handling** to gracefully handle errors
