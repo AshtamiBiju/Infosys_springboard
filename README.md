@@ -14,7 +14,7 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 
 ---
 
-## Milestone 1 (Notebook_1_clean)
+## Milestone 1
 Here’s what we’ve done so far:  
 - Loaded and cleaned text from external sources.  
 - Built summarization pipelines using **T5, BART, and PEGASUS**.  
@@ -24,8 +24,15 @@ Here’s what we’ve done so far:
 
 ---
 
-## Changes in Milestone 1 (Notebook_1_clean)
+## Changes i made for Milestone 1
 - Updated the text URLs to **new public text files** for variety.  
 - Added **print statements** to confirm text loaded and character counts.  
 - Improved **readability** with inline comments.  
-- Added **error handling** (warnings). 
+- Added **error handling** (warnings).
+
+---
+
+## My Observations
+- For Summarization Bart did the best job. It was the most similar to original in both.
+- For Paraphrasing Pegasus and also bart did a great job
+- Overall i would say T5 was lacking behind
