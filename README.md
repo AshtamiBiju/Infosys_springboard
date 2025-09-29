@@ -1,4 +1,4 @@
-# TEXTMORPH – Smart Summarization & Paraphrasing
+# TEXTMORPH – Advanced Text Summarization & Paraphrasing
 
 ## About the Project
 **TEXTMORPH** is a Python-based tool that makes reading, understanding, and rewriting text easier. It can take long articles or passages and turn them into short summaries, and it can also rephrase sentences so they sound clearer or match a different tone — all while keeping the meaning intact.  
