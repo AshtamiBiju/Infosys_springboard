@@ -1,47 +1,31 @@
-# 📝 TEXTMORPH ADVANCED TEXT SUMMARIZATION AND PARAPHRASING
+# TEXTMORPH – Smart Summarization & Paraphrasing
 
-## 🚀 Project Vision  
-**TEXTMORPH** is an AI-powered smart writing assistant designed to help users write better and faster. It can read long articles, summarize them into key points, and paraphrase text to improve clarity or change tone — all while preserving meaning.  
-
----
-
-## 🧠 The Concept  
-- **AI Summarizer**: Condenses long articles or passages into short, information-rich summaries.  
-- **AI Paraphraser**: Rewrites sentences to improve clarity, avoid repetition, or match a desired tone.  
-
-Both features leverage cutting-edge NLP models from the Hugging Face ecosystem, giving you modern, open-source AI without reinventing the wheel.  
+## About the Project
+**TEXTMORPH** is a Python-based tool that makes reading, understanding, and rewriting text easier. It can take long articles or passages and turn them into short summaries, and it can also rephrase sentences so they sound clearer or match a different tone — all while keeping the meaning intact.  
 
 ---
 
-## ⚙️ Technology Stack  
-- **Language**: Python  
-- **Core Libraries**:  
-  - Transformers (Hugging Face)  
-  - NLTK / SpaCy (optional text preprocessing)  
-  - Scikit-learn (basic data analysis & metrics)  
-  - Matplotlib / Seaborn (visualizations)
----
+## What It Does
+- **Summarize**: Condenses long texts into concise, meaningful summaries.  
+- **Paraphrase**: Rewrites sentences to improve clarity, flow, or style.  
+- **Compare**: Checks similarity between original and processed text to make sure nothing important is lost.  
 
-## 🎯 Project Goals  
-
-### Skills That will Develop  
-- **Python for AI** – Working with Transformers, NLTK, Scikit-learn  
-- **Model Fine-Tuning** – Specializing pre-trained models for summarization/paraphrasing tasks  
-- **NLP Fundamentals** – Applying extractive & abstractive summarization, tokenization, and evaluation metrics  
-- **End-to-End Development** – From setup and coding to testing and documentation
-
----
-## 🔄 What’s Implemented So Far(Notebook_1_clean)
-- ✅ Loading text from external URLs  
-- ✅ Cleaning and preprocessing text  
-- ✅ Visualizing text properties (word frequency bar charts, length histograms)  
-- ✅ Summarizer using Hugging Face model (T5 or similar)  
-- ✅ Paraphraser using Hugging Face model
+We use pre-trained models like T5,PEGASUS,BART from Hugging Face, so it’s high-quality AI without needing to train anything from scratch.  
 
 ---
 
-## 📝 Changes Added in Milestone 1(Notebook_1_clean)
-- 🔹 **Changed URLs** to pull two new public text files for variety  
-- 🔹 **Added clear print statements** showing load success and character count  
-- 🔹 **Added inline comments** for readability and better documentation  
-- 🔹 **Error handling** to gracefully handle errors(Handled Warnings)
+## Milestone 1 (Notebook_1_clean)
+Here’s what we’ve done so far:  
+- Loaded and cleaned text from external sources.  
+- Built summarization pipelines using **T5, BART, and PEGASUS**.  
+- Built paraphrasing pipelines using **T5, BART, and PEGASUS**.  
+- Added **reference texts** for similarity checks.  
+- Visualized text data: word frequencies, bigrams, and summary metrics.  
+
+---
+
+## Changes in Milestone 1 (Notebook_1_clean)
+- Updated the text URLs to **new public text files** for variety.  
+- Added **print statements** to confirm text loaded and character counts.  
+- Improved **readability** with inline comments.  
+- Added **error handling** (warnings). 
