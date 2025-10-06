@@ -25,8 +25,7 @@ Here’s what we’ve done so far:
 ---
 
 ## Changes i made for Milestone 1
-- Updated the text URLs to **new public text files** for variety.  
-- Added **print statements** to confirm text loaded and character counts.  
+- Updated the text URLs to **new public text files** for variety.    
 - Improved **readability** with inline comments.  
 - Added **error handling** (warnings).
 
