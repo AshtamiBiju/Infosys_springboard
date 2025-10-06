@@ -32,7 +32,9 @@ Here’s what we’ve done so far:
 
 ---
 
-## My Observations
-- For Summarization Bart did the best job. It was the most similar to original in both. But T5 was quite ;acking behind.
-- For Paraphrasing Pegasus and also bart did a great job
-- Overall i would say T5 was lacking behind
+## Summarization Models
+- T5 is okay as a baseline but not the strongest for summarization in this setup.
+
+- BART is balanced, reliable. Probably the safe choice if you had to pick one.
+
+- PEGAUSUS is the best performer for summarization in this milestone.
