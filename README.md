@@ -33,6 +33,6 @@ Here’s what we’ve done so far:
 ---
 
 ## My Observations
-- For Summarization Bart did the best job. It was the most similar to original in both.
+- For Summarization Bart did the best job. It was the most similar to original in both. But T5 was quite ;acking behind.
 - For Paraphrasing Pegasus and also bart did a great job
 - Overall i would say T5 was lacking behind
