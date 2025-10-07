@@ -14,26 +14,68 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 
 ---
 
-## Milestone 1
-Here’s what we’ve done so far:  
-- Loaded and cleaned text from external sources.  
-- Built summarization pipelines using **T5, BART, and PEGASUS**.  
-- Built paraphrasing pipelines using **T5, BART, and PEGASUS**.  
-- Added **reference texts** for similarity checks.  
-- Visualized text data: word frequencies, bigrams, and summary metrics.  
+## Models Used
+
+### 🔹 Summarization
+| Model | Type | Description |
+|--------|------|-------------|
+| **T5** | Abstractive | Converts any NLP task into text-to-text form; concise but may lose context. |
+| **BART** | Abstractive | Produces fluent, context-rich summaries. |
+| **PEGASUS** | Abstractive | Designed specifically for summarization tasks with superior coherence. |
+
+### 🔹 Paraphrasing
+| Model | Variant | Description |
+|--------|----------|-------------|
+| **PEGASUS Paraphrase** | Fine-tuned | Creates grammatically rich, diverse paraphrases. |
+| **T5 Paraphrase ** | Fine-tuned on PAWS dataset | Generates meaning-preserving paraphrases. |
+| **BART Paraphrase** | Fine-tuned | Produces smooth, natural-sounding rewordings. |
+
+### 🔹 Similarity
+| Model | Description |
+|--------|-------------|
+| **all-MiniLM-L6-v2** | Generates embeddings to calculate semantic similarity between texts. |
 
 ---
 
-## Changes i made for Milestone 1
-- Updated the text URLs to **new public text files** for variety.    
-- Improved **readability** with inline comments.  
-- Added **error handling** (warnings).
+## Methodology
+
+### 1. **Text Loading**
+Two large texts are fetched from **Project Gutenberg**, cleaned, and truncated.  
+Validation ensures each text is long enough for meaningful summarization.
+
+### 2. **Summarization**
+Each model generates a summary for the same text.  
+The summaries are then compared based on length, quality, and semantic similarity to the original.
+
+### 3. **Paraphrasing**
+Each paraphrasing model rewrites selected sentences into new forms while preserving meaning.  
+Results are analyzed for linguistic variation and similarity.
+
+### 4. **Similarity Analysis**
+Cosine similarity is computed using **Sentence-BERT** to assess how close each summary or paraphrase is to the source text.
+
+### 5. **Visualization**
+Using **Seaborn** and **Matplotlib**, the notebook visualizes:
+- Summary length vs. similarity  
+- Paraphrase length vs. similarity  
+- Word frequency and bigram patterns across texts  
 
 ---
 
-## Summarization Models
-- T5 is okay as a baseline but not the strongest for summarization in this setup.
+## Observations
+1. **PEGASUS** consistently produces focused, coherent summaries.  
+2. **BART** gives more detailed summaries but may be using words than necessary.  
+3. **T5** tends to compress heavily, sometimes skipping subtle context.  
+4. For paraphrasing, **T5 Paraphrase** maintains meaning most faithfully.  
+5. **Similarity scores** show paraphrased texts retain higher semantic closeness than summaries.  
+6. Bigram visualizations reveal writing style and recurring topic patterns within the texts.
 
-- BART is balanced, reliable. Probably the safe choice if you had to pick one.
+---
 
-- PEGAUSUS is the best performer for summarization in this milestone.
+## Evaluation Metrics
+| Metric | Description |
+|---------|-------------|
+| **Word Count** | Measures compression ratio. |
+| **Cosine Similarity** | Evaluates semantic closeness between model outputs and the original text. |
+| **Inter-Model Similarity** | Compares stylistic overlap between models. |
+
