@@ -16,21 +16,21 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 
 ## Models Used
 
-### 🔹 Summarization
+### Summarization
 | Model | Type | Description |
 |--------|------|-------------|
 | **T5** | Abstractive | Converts any NLP task into text-to-text form; concise but may lose context. |
 | **BART** | Abstractive | Produces fluent, context-rich summaries. |
 | **PEGASUS** | Abstractive | Designed specifically for summarization tasks with superior coherence. |
 
-### 🔹 Paraphrasing
+### Paraphrasing
 | Model | Description |
 |--------|-------------|
 | **PEGASUS Paraphrase** | Creates grammatically rich, diverse paraphrases. |
 | **T5 Paraphrase** | Generates meaning-preserving paraphrases. |
 | **BART Paraphrase** | Produces smooth, natural-sounding rewordings. |
 
-### 🔹 Similarity
+### Similarity
 | Model | Description |
 |--------|-------------|
 | **all-MiniLM-L6-v2** | Generates embeddings to calculate semantic similarity between texts. |
