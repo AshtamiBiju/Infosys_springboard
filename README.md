@@ -68,7 +68,6 @@ With **Seaborn** and **Matplotlib**, we create graphs that show:
 3. **T5** makes very short summaries and sometimes misses small details.  
 4. For paraphrasing, **T5 Paraphrase** keeps the original meaning best.  
 5. **Similarity scores** show that paraphrases stay closer in meaning to the original text than summaries do.  
-6. The bigram charts highlight each text’s writing style and common topic patterns.
 
 ---
 
