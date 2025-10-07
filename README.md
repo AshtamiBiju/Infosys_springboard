@@ -33,7 +33,7 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 ### Similarity
 | Model | Description |
 |--------|-------------|
-| **all-MiniLM-L6-v2** | Generates embeddings to calculate semantic similarity between texts. |
+| **Sentence-BERT** | Generates embeddings to calculate semantic similarity between texts. |
 
 ---
 
