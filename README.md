@@ -26,9 +26,9 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 ### 🔹 Paraphrasing
 | Model | Description |
 |--------|-------------|
-| **PEGASUS Paraphrase (tuner007)** | Creates grammatically rich, diverse paraphrases. |
-| **T5 Paraphrase (Vamsi/T5_Paraphrase_Paws)** | Generates meaning-preserving paraphrases. |
-| **BART Paraphrase (eugenesiow)** | Produces smooth, natural-sounding rewordings. |
+| **PEGASUS Paraphrase** | Creates grammatically rich, diverse paraphrases. |
+| **T5 Paraphrase** | Generates meaning-preserving paraphrases. |
+| **BART Paraphrase** | Produces smooth, natural-sounding rewordings. |
 
 ### 🔹 Similarity
 | Model | Description |
@@ -40,42 +40,41 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 ## Methodology
 
 ### 1. **Text Loading**
-Two large texts are fetched from **Project Gutenberg**, cleaned, and truncated.  
-Validation ensures each text is long enough for meaningful summarization.
+Two long texts are taken from **Project Gutenberg**, cleaned up, and shortened to a workable size.  
+We check that each text is long enough for proper testing.
 
 ### 2. **Summarization**
-Each model generates a summary for the same text.  
-The summaries are then compared based on length, quality, and semantic similarity to the original.
+Each model creates a summary of the same text.  
+We then compare the summaries based on how long they are, how well they capture the main ideas, and how close they stay to the original meaning.
 
 ### 3. **Paraphrasing**
-Each paraphrasing model rewrites selected sentences into new forms while preserving meaning.  
-Results are analyzed for linguistic variation and similarity.
+Different models rewrite selected sentences in new ways while keeping the same meaning.  
+We look at how creative, natural, and accurate these rewrites are.
 
 ### 4. **Similarity Analysis**
-Cosine similarity is computed using **Sentence-BERT** to assess how close each summary or paraphrase is to the source text.
+Using **Sentence-BERT**, we calculate **cosine similarity** to measure how similar each summary or paraphrase is to the original text.
 
 ### 5. **Visualization**
-Using **Seaborn** and **Matplotlib**, the notebook visualizes:
-- Summary length vs. similarity  
-- Paraphrase length vs. similarity  
-- Word frequency and bigram patterns across texts  
+With **Seaborn** and **Matplotlib**, we create graphs that show:
+- How summary length relates to similarity  
+- How paraphrase length relates to similarity  
+- Common words and phrase patterns in the texts  
 
 ---
 
 ## Observations
-1. **PEGASUS** consistently produces focused, coherent summaries.  
-2. **BART** gives more detailed summaries but may be using words than necessary.  
-3. **T5** tends to compress heavily, sometimes skipping subtle context.  
-4. For paraphrasing, **T5 Paraphrase** maintains meaning most faithfully.  
-5. **Similarity scores** show paraphrased texts retain higher semantic closeness than summaries.  
-6. Bigram visualizations reveal writing style and recurring topic patterns within the texts.
+1. **PEGASUS** gives short, clean, and well-focused summaries.  
+2. **BART** adds more detail but can get wordy.  
+3. **T5** makes very short summaries and sometimes misses small details.  
+4. For paraphrasing, **T5 Paraphrase** keeps the original meaning best.  
+5. **Similarity scores** show that paraphrases stay closer in meaning to the original text than summaries do.  
+6. The bigram charts highlight each text’s writing style and common topic patterns.
 
 ---
 
 ## Evaluation Metrics
-| Metric | Description |
-|---------|-------------|
-| **Word Count** | Measures compression ratio. |
-| **Cosine Similarity** | Evaluates semantic closeness between model outputs and the original text. |
-| **Inter-Model Similarity** | Compares stylistic overlap between models. |
-
+| Metric | What It Shows |
+|---------|----------------|
+| **Word Count** | How much shorter the summary is compared to the original. |
+| **Cosine Similarity** | How close the meaning is to the original text. |
+| **Inter-Model Similarity** | How similar the outputs of different models are to each other. |
