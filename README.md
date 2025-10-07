@@ -24,11 +24,11 @@ Used pre-trained models like T5,PEGASUS,BART from Hugging Face
 | **PEGASUS** | Abstractive | Designed specifically for summarization tasks with superior coherence. |
 
 ### 🔹 Paraphrasing
-| Model | Variant | Description |
-|--------|----------|-------------|
-| **PEGASUS Paraphrase** | Fine-tuned | Creates grammatically rich, diverse paraphrases. |
-| **T5 Paraphrase ** | Fine-tuned on PAWS dataset | Generates meaning-preserving paraphrases. |
-| **BART Paraphrase** | Fine-tuned | Produces smooth, natural-sounding rewordings. |
+| Model | Description |
+|--------|-------------|
+| **PEGASUS Paraphrase (tuner007)** | Creates grammatically rich, diverse paraphrases. |
+| **T5 Paraphrase (Vamsi/T5_Paraphrase_Paws)** | Generates meaning-preserving paraphrases. |
+| **BART Paraphrase (eugenesiow)** | Produces smooth, natural-sounding rewordings. |
 
 ### 🔹 Similarity
 | Model | Description |
