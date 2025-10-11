@@ -131,9 +131,12 @@ It implements advanced abstractive and extractive summarization, along with perf
 3. **Phi-2** and **TinyLlama** are lightweight and efficient with decent accuracy.  
 4. **TextRank** performs well for extractive summarization but lacks abstract understanding.  
 5. **Paraphrases** achieve higher similarity than summaries.  
-6. **Visual comparisons** show model trade-offs between length, readability, and semantic retention.  
+6. **Visual comparisons** show model trade-offs between length, readability, and semantic retention.
 
+---
+
+| Metric | Description |
+|---------|-------------|
 | **Word Count** | How much shorter the summary is compared to the original. |
-riginal. |
 | **Cosine Similarity** | How close the meaning is to the original text. |
 | **Inter-Model Similarity** | How similar the outputs of different models are to each other. |
