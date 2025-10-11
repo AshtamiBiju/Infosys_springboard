@@ -87,8 +87,8 @@ Pre-trained models like **T5**, **PEGASUS**, and **BART** from Hugging Face were
 ## Milestone 2 – Implementation & Advanced Evaluation
 
 ### Overview
-This milestone expands TEXTMORPH into a complete multi-model NLP system with powerful evaluation, interactive visualizations, and dataset integration.  
-It implements advanced abstractive and extractive summarization, along with performance metrics and UI support.
+This milestone expands TEXTMORPH into a complete multi-model NLP system with powerful evaluation and dataset integration.  
+It implements advanced abstractive and extractive summarization, along with performance metrics and model comparison.
 
 ---
 
@@ -99,36 +99,8 @@ It implements advanced abstractive and extractive summarization, along with perf
 - **Interactive UI:**  
   - Summarize with All Models  
   - Summarize with Specific Models (checkbox UI)  
-- **Visualizations:** Metrics tables, bar charts, radar plots  
 - **Dataset Testing:** 10+ sample texts + support for external `.txt`/`.csv` files  
 - **GPU Enabled:** Optimized for Google Colab GPU  
-
----
-
-### Setup Instructions
-1. Create a Hugging Face account → [https://huggingface.co](https://huggingface.co)  
-2. Generate a read-access token (Profile → Settings → Access Tokens)  
-3. Accept the [Gemma License](https://huggingface.co/google/gemma-2b-it)  
-4. In Google Colab:  
-   - Runtime → Change runtime type → **GPU**  
-   - Store the token in Colab Secrets as `HF_TOKEN`  
-5. Run all cells to install dependencies, authenticate, and load models  
-
----
-
-### Usage
-- Paste custom text or select from sample passages  
-- Choose summarization type (Abstractive / Extractive)  
-- Run multiple models or custom selections  
-- View evaluation metrics and visualizations  
-
----
-
-### Requirements
-- **Python:** 3.8+  
-- **Environment:** Google Colab (GPU)  
-- **Libraries:**  
-  `transformers`, `torch`, `sentence-transformers`, `rouge-score`, `nltk`, `textstat`, `ipywidgets`, `networkx`, `matplotlib`, `seaborn`, `pandas`
 
 ---
 
@@ -139,7 +111,6 @@ It implements advanced abstractive and extractive summarization, along with perf
 | **Abstractive Summarization** | TinyLlama, Phi-2, BART-Large-CNN, Gemma-2B |
 | **Extractive Summarization** | TextRank (Embeddings-based) |
 | **Similarity Measurement** | Sentence-BERT |
-| **Visualization** | Matplotlib, Seaborn |
 
 ---
 
@@ -154,14 +125,6 @@ It implements advanced abstractive and extractive summarization, along with perf
 
 ---
 
-### Visualizations
-- Model performance comparison (bar chart)  
-- Word count vs similarity (scatter plot)  
-- Readability distribution (histogram)  
-- Radar chart for overall evaluation  
-
----
-
 ### Observations & Insights
 1. **Gemma** gives the most factual and balanced summaries.  
 2. **BART** generates context-rich but longer outputs.  
@@ -171,5 +134,6 @@ It implements advanced abstractive and extractive summarization, along with perf
 6. **Visual comparisons** show model trade-offs between length, readability, and semantic retention.  
 
 | **Word Count** | How much shorter the summary is compared to the original. |
+riginal. |
 | **Cosine Similarity** | How close the meaning is to the original text. |
 | **Inter-Model Similarity** | How similar the outputs of different models are to each other. |
