@@ -99,7 +99,7 @@ It implements advanced abstractive and extractive summarization, along with perf
 - **Interactive UI:**  
   - Summarize with All Models  
   - Summarize with Specific Models (checkbox UI)  
-- **Dataset Testing:** 10+ sample texts + support for external `.txt`/`.csv` files  
+- **Dataset Testing:** 10 sample texts  
 - **GPU Enabled:** Optimized for Google Colab GPU  
 
 ---
