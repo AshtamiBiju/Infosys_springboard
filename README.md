@@ -125,13 +125,12 @@ It implements advanced abstractive and extractive summarization, along with perf
 
 ---
 
-### Observations & Insights
-1. **Gemma** gives the most factual and balanced summaries.  
-2. **BART** generates context-rich but longer outputs.  
-3. **Phi-2** and **TinyLlama** are lightweight and efficient with decent accuracy.  
-4. **TextRank** performs well for extractive summarization but lacks abstract understanding.  
-5. **Paraphrases** achieve higher similarity than summaries.  
-6. **Visual comparisons** show model trade-offs between length, readability, and semantic retention.
+### Observations & Insights  
+1. **BART** generates context-rich but longer outputs.  
+2. **Phi-2** and **TinyLlama** are lightweight and efficient with decent accuracy.  
+3. **TextRank** performs well for extractive summarization but lacks abstract understanding.  
+4. **Paraphrases** achieve higher similarity than summaries.  
+5. **Visual comparisons** show model trade-offs between length, readability, and semantic retention.
 
 ---
 
