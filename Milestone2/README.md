@@ -52,4 +52,6 @@ It implements advanced abstractive and extractive summarization, along with perf
 
 | Metric | Description |
 |---------|-------------|
-| **Word Count** | How much shorter the
+| **Word Count** | How much shorter the summary is compared to the original. |
+| **Cosine Similarity** | How close the meaning is to the original text. |
+| **Inter-Model Similarity** | How similar the outputs of different models are to each other. |
